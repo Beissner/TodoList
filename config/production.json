@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://ebeissner:cactusAttack77@todoist.7ewwq.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "jwt": "victoriassecret"
+}
