@@ -1,0 +1,109 @@
+$light-background-color: #282828;
+$pink-color: #c6538c;
+$blue-color: #2287A2;
+
+.side-bar-container {
+    display: flex;
+    width: 250px;
+    height: 94vh;
+    flex-direction: column;
+    color: #fff;
+    background-color: $light-background-color;
+    padding-top: 20px;
+    padding-left: 20px;
+
+    .side-bar-row {
+        align-items: center;
+        opacity: 0.8;
+        margin-top: 8px;
+        cursor: pointer;
+        border-radius: 2px;
+        padding: 6px 0 6px 0;
+
+        div {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .fa-inbox {
+            padding-right: 10px;
+        } 
+    }
+
+    .side-bar-row:hover {
+        background-color: #363636;
+        transition: 0.2s;
+    }
+
+    .side-bar-project {
+        align-items: center;
+        opacity: 0.8;
+        margin-top: 8px;
+        cursor: pointer;
+        border-radius: 2px;
+        padding-top: 10px;
+        padding-right: 10px;
+        margin: 40px 10px 15px 0;
+        justify-content: space-between;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+       
+        div {
+            font-size: 0.9rem;
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+
+        .fa-plus-circle:hover {
+            color: $pink-color;
+            transition: 0.2s;
+        }
+    }
+
+    .project-title-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 300;
+        padding: 8px 20px 8px 10px;
+        opacity: 0.7;
+        cursor: pointer;
+
+        .fa-trash-alt {
+            opacity: 0;
+        }
+    }
+}
+
+.project-title-row:hover {
+    background-color: #363636;
+    transition: 0.2;
+
+    .fa-trash-alt {
+        opacity: 0.6;
+        transition: 0.2;
+    }
+   
+}
+
+.fa-trash-alt:hover {
+    color: $pink-color;
+    transition: 0.2;
+}
+
+
+.project-modal-container {
+    display: flex;
+    flex-direction: column;
+   
+    .project-modal-title {
+        color: #fff;
+        margin-bottom: 10px;
+        opacity: 0.8;
+        font-size: 1.2rem;
+    }
+
+    .project-modal-button-container {
+        margin-top: 15px;
+    }
+}

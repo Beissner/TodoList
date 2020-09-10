@@ -1,0 +1,37 @@
+$light-background-color: #282828;
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $light-background-color;
+    border-bottom-style: solid;
+    border-bottom-color: #202020;
+    border-bottom-width: 1px;
+
+    i {
+        margin-right: 15px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    i:hover {
+        background-color: #4a4a4a;
+        transition: 0.2s;
+    }
+}
+
+.item:hover {
+    background-color: #4a4a4a !important;
+}
+
+
+.fa-sign-out-alt, .fa-user-times {
+    color: #fff;
+    opacity: 0.7;
+    padding-right: 7px;
+    font-size: 0.8rem;
+}

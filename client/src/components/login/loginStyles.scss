@@ -1,0 +1,96 @@
+$base-color: #c6538c;
+$blue-color: #2287A2;
+$dark-background-color: #171717;
+$light-background-color: #282828;
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: $dark-background-color;
+    background-image: url('../../res/background-image.jpg');
+    color: $base-color;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .welcome-text {
+        font-size: 1.7rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .registration-login-container {
+        width: 450px;
+        height: 380px;
+        border-radius: 10px;
+        padding: 15px 20px 15px 20px;
+        background-color: #fff;
+        opacity: 0.95;
+
+        .title-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px 0;
+
+            .title {
+                font-weight: 400;
+                font-size: 1.1rem;
+                cursor: pointer;
+            }
+          
+            .add-border {
+                border-bottom: 2px solid $base-color;
+                opacity: 1;
+            }
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                height: 25px;
+                margin: 10px 0 10px 0;
+                font-size: 0.8rem;
+                padding: 15px;
+                border: 1px solid #ccc;
+                font-weight: 400;
+                border-radius: 5px;
+            }
+
+            input[type=text], select {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+              }
+
+            input::placeholder {
+                font-size: 0.8rem;
+                font-weight: 300; 
+                opacity: 0.6;
+            }
+
+            button {
+                background: $blue-color;
+                font-family: 'Open Sans', sans-serif;
+                padding: 8px 10px 8px 10px;
+                color: #fff;
+                font-size: 1.1rem;
+                font-weight: 300;
+                margin-top: 15px;
+                border-style: none;
+                border-radius: 10px;
+                opacity: 1;
+            }
+        }
+    }
+
+    
+}
+

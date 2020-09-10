@@ -1,0 +1,120 @@
+$pink-color: #c6538c;
+$blue-color: #2287A2;
+
+/*      Add Task View      */
+.task-row {
+
+    align-items: center;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    opacity: 0.8;
+  
+   
+    .task-description {
+        font-size: 0.9rem;
+        font-weight: 200;
+        margin-left: 15px;
+        text-align: center;
+        display: flex;
+        flex: 1;
+    }
+   
+    .fa-edit, .fa-trash-alt {
+        color: transparent;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .fa-circle {
+        opacity: 0.6;
+    }
+
+}
+
+
+.task-row:hover {
+    .fa-edit, .fa-trash-alt {
+        color: #fff;
+        opacity: 0.6;
+        transition: 0.2s;
+    }
+
+     .fa-circle:hover {
+        color: #2287A2;
+        transition: 0.2s;
+    }
+
+    .fa-edit:hover, .fa-trash-alt:hover {
+        background-color: #4a4a4a;
+        opacity: 1;
+     }
+    
+}
+
+
+
+
+
+
+/*      Create/Edit Task View      */
+.add-task-row {
+    margin: 8px 0 8px 0;
+    align-items: center;
+    padding-bottom: 8px;
+    cursor: pointer;
+
+    .add-task:hover {
+        color: $blue-color;
+        opacity: 1;
+        transition: 0.2s;
+      
+    }
+
+    .add-task {
+        font-size: 0.9rem;
+        font-weight: 200;
+        margin-left: 15px;
+        text-align: center;
+        opacity: 0.6;
+    }
+
+    i {
+        color: $blue-color;
+    }
+   
+}
+
+button {
+    color: '#fff';
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 7px 13px 7px 13px;
+    border-style: none;
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.add-btn {
+    background-color: $blue-color;
+    
+}
+
+.cancel-btn {
+    background-color: transparent;
+}
+
+.add-btn:hover, .cancel-btn:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+
+
+i {
+    font-size: 1.1rem;
+}
+
+

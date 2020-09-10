@@ -1,0 +1,22 @@
+$dark-background-color: #171717;
+$light-background-color: #282828;
+$blue-color: #2287A2;
+
+.home-container {
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    background-color: $dark-background-color;
+}
+
+.home-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.delete-btn {
+    background-color: $blue-color;
+    margin-left: 10px;
+}
+
