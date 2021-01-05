@@ -10,7 +10,7 @@ export const getTasks = (token, projectTitle) => async dispatch => {
 
     try {
         const config = { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` } };
-        const res = await axios.get(`/tasks/mytasks/${projectTitle}`, config);
+        const res = await axios.get(`/api/tasks/mytasks/${projectTitle}`, config);
 
         const taskArray = Object.values(res.data);
         dispatch({ type: FETCH_TASKS, payload: taskArray });
@@ -31,7 +31,7 @@ export const addTask = (token, task, projectTitle) => async dispatch => {
 
     try {
         const config = { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` } };
-        const res = await axios.post('/tasks/addTask', JSON_Body, config);
+        const res = await axios.post('/api/tasks/addTask', JSON_Body, config);
         dispatch({ type: ADD_TASK, payload: res.data });
 
     } catch (e) {
@@ -49,7 +49,7 @@ export const deleteTask = (token, task) => async dispatch => {
     const taskId = task._id;
     try {
         const config = { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` } };
-        await axios.delete(`/tasks/delete/${taskId}`, config);
+        await axios.delete(`/api/tasks/delete/${taskId}`, config);
         dispatch({ type: DELETE_TASK, payload: task });
     } catch (e) {
         console.error('Failed to delete task', e);
@@ -69,7 +69,7 @@ export const updateTask = (token, task) => async dispatch => {
 
     try {
         const config = { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` } };
-        await axios.patch(`/tasks/update/${taskId}`, JSON_Body, config);
+        await axios.patch(`/api/tasks/update/${taskId}`, JSON_Body, config);
         //dispatch({ type: UPDATE_TASK, payload: task });
     } catch (e) {
         console.error('Failed to update task', e);

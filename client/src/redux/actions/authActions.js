@@ -20,7 +20,7 @@ export const registerUser = ({ name, email, password }) => async dispatch => {
     try {
         const config = { headers: { 'Content-Type': 'application/json' } };
         const body = JSON.stringify(newUser);
-        const res = await axios.post('/users/register', body, config);
+        const res = await axios.post('/api/users/register', body, config);
         dispatch({ type: REGISTER_SUCCESS, payload: res.data });
 
     } catch (e) {
@@ -40,7 +40,7 @@ export const loginUser = (email, password) => async dispatch => {
     try {
         const config = { headers: { 'Content-Type': 'application/json' } };
         const body = JSON.stringify(user);
-        const res = await axios.post('/users/login', body, config);
+        const res = await axios.post('/api/users/login', body, config);
         dispatch({ type: LOGIN_SUCCESS, payload: res.data });
     } catch (e) {
         console.error('Unable to login user', e);
@@ -53,7 +53,7 @@ export const loginUser = (email, password) => async dispatch => {
 export const logoutUser = (token) => async dispatch => {
     try {
         const config = { headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' } };
-        await axios.get('/users/logout', config);
+        await axios.get('/api/users/logout', config);
         dispatch({ type: LOGOUT_USER });
     } catch (e) {
         console.error('Unable to logout user', e);
@@ -65,7 +65,7 @@ export const deleteAccount = (token) => async dispatch => {
   
     try {
         const config = { headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' } };
-        await axios.delete('/users/delete', config);
+        await axios.delete('/api/users/delete', config);
         dispatch({ type: LOGOUT_USER });
     } catch (e) {
         console.error('Unable to delete user', e);

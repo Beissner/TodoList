@@ -4,7 +4,7 @@ const auth = require('../middleware/auth');
 const Project = require('../models/Project');
 
 
-// @route   POST /users/addProject 
+// @route   POST /api/projects/addProject 
 // @desc    add project
 // @access  Private
 router.post('/addProject', auth, async (req, res) => {
@@ -24,7 +24,7 @@ router.post('/addProject', auth, async (req, res) => {
 });
 
 
-// @route   GET 
+// @route   GET /api/projects/myprojects 
 // @desc    Get user's projects 
 // @access  Private
 router.get('/myprojects', auth, async (req, res) => {
@@ -37,7 +37,7 @@ router.get('/myprojects', auth, async (req, res) => {
     }
 });
 
-// @route   DELETE 
+// @route   DELETE /api/projects/delete/<id> 
 // @desc    delete a project
 // @access  Private
 router.delete('/delete/:id', auth, async (req, res) => {

@@ -4,7 +4,7 @@ const auth = require('../middleware/auth');
 const Task = require('../models/Task');
 
 
-// @route   POST 
+// @route   POST /api/tasks/addTask 
 // @desc    Create new task
 // @access  Private
 router.post('/addTask', auth, async (req, res) => {
@@ -24,7 +24,7 @@ router.post('/addTask', auth, async (req, res) => {
 });
 
 
-// @route   GET 
+// @route   GET /api/tasks/mytasks/<projectTitle> 
 // @desc    Get user's tasks 
 // @access  Private
 router.get('/mytasks/:projectTitle', auth, async (req, res) => {
@@ -40,7 +40,7 @@ router.get('/mytasks/:projectTitle', auth, async (req, res) => {
     }
 });
 
-// @route   PATCH 
+// @route   PATCH /api/tasks/update/<id> 
 // @desc    Update a task
 // @access  Private
 router.patch('/update/:id', auth, async (req, res) => {
@@ -56,7 +56,7 @@ router.patch('/update/:id', auth, async (req, res) => {
     }
 });
 
-// @route   DELETE 
+// @route   DELETE /api/tasks/delete/<id> 
 // @desc    delete a task
 // @access  Private
 router.delete('/delete/:id', auth, async (req, res) => {

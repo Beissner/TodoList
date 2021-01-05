@@ -5,7 +5,7 @@ const User = require('../models/User');
 const Task = require('../models/Task');
 const auth = require('../middleware/auth');
 
-// @route   POST /users/register 
+// @route   POST /api/users/register 
 // @desc    Register and login a user
 // @access  Public
 router.post('/register', async (req, res) => {
@@ -35,7 +35,7 @@ router.post('/register', async (req, res) => {
 });
 
 
-// @route   POST /users/login 
+// @route   POST /api/users/login 
 // @desc    Login a user
 // @access  Public
 router.post('/login', async (req, res) => {
@@ -55,7 +55,7 @@ router.post('/login', async (req, res) => {
     }
 });
 
-// @route   POST /users/logout 
+// @route   POST /api/users/logout 
 // @desc    Logout a user
 // @access  Private
 router.get('/logout', auth, async (req, res) => {
@@ -89,7 +89,7 @@ router.patch('/update', auth, async (req, res) => {
     }
 });
 
-// @route   DELETE /users/delete 
+// @route   DELETE /api/users/delete 
 // @desc    Delete a user
 // @access  Private
 router.delete('/delete', auth, async (req, res) => {

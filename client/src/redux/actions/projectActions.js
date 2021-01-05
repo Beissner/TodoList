@@ -7,7 +7,7 @@ export const getProjects = (token) => async dispatch => {
 
     try {
         const config = { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` } };
-        const res = await axios.get('/projects/myprojects', config);
+        const res = await axios.get('/api/projects/myprojects', config);
 
         const projectArray = Object.values(res.data);
         dispatch({ type: FETCH_PROJECTS, payload: projectArray });
@@ -28,7 +28,7 @@ export const addProject = (token, projectTitle) => async dispatch => {
 
     try {
         const config = { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` } };
-        const res = await axios.post('/projects/addProject', JSON_Body, config);
+        const res = await axios.post('/api/projects/addProject', JSON_Body, config);
   
         dispatch({ type: ADD_PROJECT, payload: res.data });
 
@@ -48,7 +48,7 @@ export const deleteProject = (token, project) => async dispatch => {
     
     try {
         const config = { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` } };
-        await axios.delete(`/projects/delete/${projectId}`, config);
+        await axios.delete(`/api/delete/${projectId}`, config);
         dispatch({ type: DELETE_PROJECT, payload: project });
     } catch (e) {
         console.error('Failed to delete project', e);
