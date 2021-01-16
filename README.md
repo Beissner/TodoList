@@ -8,6 +8,6 @@
 * Built using ES6 and react hooks
 
 
-<img src="https://github.com/Beissner/TodoList/blob/master/resources/login.png?raw=true" width="400">
-<img src="https://github.com/Beissner/TodoList/blob/master/resources/Home.png?raw=true" width="400">
-<img src="https://github.com/Beissner/TodoList/blob/master/resources/AddProject.png?raw=true" width="400">
+<img src="https://github.com/Beissner/TodoList/blob/master/resources/login.png?raw=true" width="700">
+<img src="https://github.com/Beissner/TodoList/blob/master/resources/Home.png?raw=true" width="700">
+<img src="https://github.com/Beissner/TodoList/blob/master/resources/AddProject.png?raw=true" width="700">
