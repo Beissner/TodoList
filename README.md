@@ -7,4 +7,4 @@
 * Redux and redux-thunk for app state management
 * Built using ES6 and react hooks
 
-![login page](https://github.com/Beissner/TodoList/resources/login.png?raw=true)
+![login page](https://github.com/Beissner/TodoList/tree/master/resources/login.png?raw=true)
