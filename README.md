@@ -1,10 +1,8 @@
 ## TodoList
 
->
-> A full stack web app built with React, Node, MongoDB and Express. 
->
+> A full stack web app built with React, Node, MongoDB and Express. Allows users to get organized by creating projects, assigning and completing tasks.
 
-* extensive backend API with NodeJS and Express
-* protected routes/endpoints with JWT
-* redux and redux-thunk for app state management
-* built using ES6 and react hooks
+* Extensive backend API with Node.js and Express
+* Protected routes/endpoints with JWT (JSON Web Tokens)
+* Redux and redux-thunk for app state management
+* Built using ES6 and react hooks
