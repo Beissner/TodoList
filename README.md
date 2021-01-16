@@ -7,6 +7,7 @@
 * Redux and redux-thunk for app state management
 * Built using ES6 and react hooks
 
-![login page](https://github.com/Beissner/TodoList/blob/master/resources/login.png?raw=true)
 
-<img src="https://github.com/Beissner/TodoList/blob/master/resources/login.png?raw=true" width="100">
+<img src="https://github.com/Beissner/TodoList/blob/master/resources/login.png?raw=true" width="400">
+<img src="https://github.com/Beissner/TodoList/blob/master/resources/Home.png?raw=true" width="400">
+<img src="https://github.com/Beissner/TodoList/blob/master/resources/AddProject.png?raw=true" width="400">
